@@ -59,7 +59,7 @@ export default async function DashboardPage() {
           label="Öppna ärenden"
           value={openIssuesCount || 0}
           href="/dashboard/apartments"
-          highlight={openIssuesCount && openIssuesCount > 0}
+          highlight={!!(openIssuesCount && openIssuesCount > 0)}
         />
       </div>
 
